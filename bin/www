@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('mycrud:server');
+var debug = require('debug')('ASSIG03:server');
 var http = require('http');
 
 /**

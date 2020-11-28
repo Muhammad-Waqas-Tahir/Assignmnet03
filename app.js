@@ -43,7 +43,10 @@ app.use(function(err, req, res, next) {
 
 
 mongoose.connect("mongodb+srv://waqas:waqas123@cluster0.umwfx.mongodb.net/<dbname>?retryWrites=true&w=majority",
-{ useNewUrlParser: true })
+{ useNewUrlParser: true,
+  useUnifiedTopology: true
+
+})
 .then(() => console.log("Connected to Mongo...."))
 .catch((error) => console.log(error.message));
 
