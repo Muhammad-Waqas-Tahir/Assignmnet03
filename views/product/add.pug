@@ -1,15 +1,15 @@
 extends ../layout
 
 block content
-    h1 Add Product
+    h1 Add Courses
     form(action="/product/add",method="post")
         .form-group
-            label(for="name") Product Name
+            label(for="name") Course Name
             input#name(type="text",class="form-control" name="Name")
-            label(for="Price") Product Price
+            label(for="Price") Course ID
             input#price(type="text",class="form-control" name="Price")
-            label(for="Category") Product Category
+            label(for="Category") Course Duration(Hrs)
             input#price(type="text",class="form-control" name="Category")
-            label(for="brand") Product Brand
+            label(for="brand") Course Fee(USD)
             input#price(type="text",class="form-control" name="Brand")
         input(type="submit", value="ADD",class="btn btn-dark")    

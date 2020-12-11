@@ -1,15 +1,15 @@
 extends ../layout
 
 block content
-    h1 Edit Product
+    h1 Edit Courses
     form(action="/product/edit/"+products._id,method="post")
         .form-group
-            label(for="name") Product Name
+            label(for="name") Course Name
             input#name(type="text",class="form-control", name="Name", value=products.Name)
-            label(for="name") Product Price
+            label(for="name") Course ID
             input#price(type="text",class="form-control", name="Price", value=products.Price)
-            label(for="name") Product Category
+            label(for="name") Course Duration(Hrs)
             input#name(type="text",class="form-control", name="Category", value=products.Category)
-            label(for="name") Product Brand
+            label(for="name") Course Fee(USD)
             input#price(type="text",class="form-control", name="Brand", value=products.Brand)
         input(type="submit", value="UPDATE",class="btn btn-dark")    

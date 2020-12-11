@@ -5,17 +5,17 @@ block content
         .col-sm-8
             h1=title 
         .col-sm-4
-            a(href="/product/add",class="btn btn-dark float-right" ) CREATE PRODUCT
+            a(href="/product/add",class="btn btn-dark float-right" ) CREATE NEW
 
     
     table.table
         thead
             tr  
-                th NAME
-                th PRICE
-                th CATEGORY
-                th BRAND
-                th ACTION
+                th Course Name
+                th Course ID
+                th Course Duration(Hrs)
+                th Course Fee(USD)
+                th 
         tbody
             each productModel in products
                 tr
